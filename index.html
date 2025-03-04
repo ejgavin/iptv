@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+</head>
+<body>
+    <h1>IPTV Player</h1>
+    <video id="player" class="video-js vjs-default-skin" controls autoplay width="640" height="360">
+        <source src="playlist.m3u" type="application/x-mpegURL">
+    </video>
+
+    <script>
+        var player = videojs('player');
+    </script>
+</body>
+</html>
